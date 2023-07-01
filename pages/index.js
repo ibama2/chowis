@@ -1,103 +1,60 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import Layout from '../layout';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Chowis</title>
-        <link rel="icon" href="/images/headIcon.png" />
-      </Head>
-
-      <main>
-        <div className={styles.logo}><img src="/images/chowislogo.webp" fetchpriority="high" /></div>
-
-        <div className={styles.grid}>
-          <div className={styles.row}>
-            <div className={styles.left}>
-              <p>基于AI</p>
-              <p>的皮肤、毛发及头皮诊断系统</p>
-
-              <p>不论为了个人或商业活动，推荐选昭盈偲公司独有的多种基于AI的皮肤、头发及头皮诊断系统。</p>
-            </div>
-            <img className={styles.productImage} src="/images/pic1.png" alt="myskin fain" />
+    <Layout>
+      <div className={styles.grid}>
+        <div className={styles.row + ' ' + styles.pic1}>
+          <div className={styles.description}>
+            <div>基于AI的皮肤、毛发及头皮诊断系统</div>
+            <div>不论为了个人或商业活动，推荐选昭盈偲公司独有的多种基于AI的皮肤、头发及头皮诊断系统。</div>
           </div>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
-      </main>
 
-      <footer>
+        <div className={styles.row + ' ' + styles.pic2}>
+          <div className={styles.description + ' ' + styles.des2}>
+            昭盈偲公司是一家专门从事光学及传感器技术、硬件、软件开发等皮肤、毛发及头皮诊断技术公司。
+            自2012年制造智能及移动皮肤、头发解决方案,以"为日常增加科学"为目标设立以来,构建了最尖端的智能移动解决方案,并以此为基础为顾客、产品和服务提供附加价值。
+          </div>
+        </div>
 
-      </footer>
+        <div className={styles.row + ' ' + styles.pic3}>
+        </div>
 
-      <style jsx>{`
-        main {
-          width: 100%;
-          padding: 1rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
+        <div className={styles.row + ' ' + styles.pic4}>
+          <div className={styles.description + ' ' + styles.areas}>
+            <div className={styles.head}>欧洲</div>
+            <div>: 德国、俄罗斯（独联体）、乌克兰、意大利、英国、法国、西班牙、奥地利、比利时、希腊</div>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+            <div className={styles.head}>大洋洲</div>
+            <div>: 新西兰、澳大利亚、马来西亚、新加坡、菲律宾、印度尼西亚、圣诞岛、科科斯群岛和东帝汶
+            </div>
+
+            <div className={styles.head}>欧洲</div>
+            <div>: 德国、俄罗斯（独联体）、乌克兰、意大利、英国、法国、西班牙、奥地利、比利时、希腊</div>
+
+            <div className={styles.head}>美洲</div>
+            <div>: 美国、加拿大和多米尼加共和国</div>
+
+            <div className={styles.head}>非洲</div>
+            <div>: 尼日利亚</div>
+
+            <div className={styles.head}>亚洲</div>
+            <div>: 大韩民国、缅甸、日本、中国、印度、乌兹别克斯坦、台湾、香港、伊朗</div>
+
+            <div className={styles.head}>中南美</div>
+            <div>: 阿根廷、厄瓜多尔、巴西、墨西哥</div>
+
+            <div className={styles.head}>俄罗斯</div>
+            <div>: 俄罗斯、哈萨克斯坦</div>
+
+          </div>
+          <div className={styles.hint}>* 根据国家代码分类</div>
+        </div>
+      </div>
+    </Layout>
   )
 }

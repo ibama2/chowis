@@ -1,0 +1,102 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "product": "DermoPrime",
+            "imgUrl": "/images/productImages/dermoPrime.png",
+            "descriptions": [
+                {
+                    "id": "1",
+                    "icon": "/images/productImages/dermoPrime-icon-1.png",
+                    "description": "DermoSmart将支架和手持设备融为一体简洁大方，设计成小尺寸便于保管和移动。"
+                },
+                {
+                    "id": "2",
+                    "icon": "/images/productImages/dermoPrime-icon-2.png",
+                    "description": "同时拥有与大型专业诊断仪相媲美的分析准确度，和相对较低的价格提高了经济效率。"
+                },
+                {
+                    "id": "3",
+                    "icon": "/images/productImages/dermoPrime-icon-3.png",
+                    "description": "具有高便携性和高准确度的分析，不仅在专卖店，在快闪店等也可以不受限制地使用。"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "product": "p2",
+            "imgUrl": "",
+            "descriptions": [
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "product": "",
+            "imgUrl": "",
+            "descriptions": [
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "product": "",
+            "imgUrl": "",
+            "descriptions": [
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "product": "",
+            "imgUrl": "",
+            "descriptions": [
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                },
+                {
+                    "icon": "",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  margin: 40px 0px 36px calc((100% - 980px) * 0);
+  left: 63px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+  height: 31px;
+  width: 100%;
+}
+
+.logo img {
+  width: 127px;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
