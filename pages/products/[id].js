@@ -21,7 +21,7 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export default function Post({ productData }) {
+export default function Product({ productData }) {
     // 用返回的数据渲染水果页面
     return (
         <Layout>

@@ -6,17 +6,17 @@
             "imgUrl": "/images/productImages/dermoPrime.png",
             "descriptions": [
                 {
-                    "id": "1",
+                    "id": "11",
                     "icon": "/images/productImages/dermoPrime-icon-1.png",
                     "description": "DermoSmart将支架和手持设备融为一体简洁大方，设计成小尺寸便于保管和移动。"
                 },
                 {
-                    "id": "2",
+                    "id": "12",
                     "icon": "/images/productImages/dermoPrime-icon-2.png",
                     "description": "同时拥有与大型专业诊断仪相媲美的分析准确度，和相对较低的价格提高了经济效率。"
                 },
                 {
-                    "id": "3",
+                    "id": "13",
                     "icon": "/images/productImages/dermoPrime-icon-3.png",
                     "description": "具有高便携性和高准确度的分析，不仅在专卖店，在快闪店等也可以不受限制地使用。"
                 }
@@ -28,15 +28,18 @@
             "imgUrl": "/images/productImages/dermoSmart.png",
             "descriptions": [
                 {
-                    "icon": "/images/productImages/dermoPrime-icon-1.png",
+                    "id": "21",
+                    "icon": "/images/productImages/dermoSmart-icon-1.png",
                     "description": "DermoSmart将支架和手持设备融为一体简洁大方，设计成小尺寸便于保管和移动。"
                 },
                 {
-                    "icon": "/images/productImages/dermoPrime-icon-2.png",
+                    "id": "22",
+                    "icon": "/images/productImages/dermoSmart-icon-2.png",
                     "description": "同时拥有与大型专业诊断仪相媲美的分析准确度，和相对较低的价格提高了经济效率。"
                 },
                 {
-                    "icon": "/images/productImages/dermoPrime-icon-3.png",
+                    "id": "23",
+                    "icon": "/images/productImages/dermoSmart-icon-3.png",
                     "description": "具有高便携性和高准确度的分析，不仅在专卖店，在快闪店等也可以不受限制地使用。"
                 }
             ]
@@ -47,14 +50,17 @@
             "imgUrl": "/images/productImages/dermoPico.png",
             "descriptions": [
                 {
+                    "id": "31",
                     "icon": "/images/productImages/dermoPico-icon-1.png",
                     "description": "轻便、纤薄的外形提高了便携性，以简单的可拆卸形式适配各种移动设备的使用。"
                 },
                 {
+                    "id": "32",
                     "icon": "/images/productImages/dermoPico-icon-2.png",
                     "description": "在保持专业分析能力的同时，在功能、空间、价格等各方面都拥有卓越的效率性。"
                 },
                 {
+                    "id": "33",
                     "icon": "/images/productImages/dermoPico-icon-3.png",
                     "description": "通过蓝牙(BLE)与安卓及IOS等多种移动设备的操作系统轻松兼容。"
                 }
@@ -62,39 +68,72 @@
         },
         {
             "id": "4",
-            "product": "",
-            "imgUrl": "",
+            "product": "mySkin·Hair KIOSK",
+            "imgUrl": "/images/productImages/kiosk.png",
             "descriptions": [
                 {
-                    "icon": "",
-                    "description": ""
+                    "id": "41",
+                    "icon": "/images/productImages/kiosk-icon-1.png",
+                    "description": "诊断仪底座内置紫外线杀菌功能，让每个进行诊断的顾客都可卫生清洁地使用。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "id": "42",
+                    "icon": "/images/productImages/kiosk-icon-2.png",
+                    "description": "机器内置智能指南，让每位顾客都无需另行帮助即可轻松遵循诊断过程，分析结果可通过QR码共享。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "id": "43",
+                    "icon": "/images/productImages/kiosk-icon-3.png",
+                    "description": "通过自助服务机画面可以获得广告效果，有助于强化品牌形象。"
+                },
+                {
+                    "id": "44",
+                    "icon": "/images/productImages/kiosk-icon-4.png",
+                    "description": "除了21英寸和15英寸的基本规格外，还支持定制以适应客户需求或空间安装目的。"
                 }
             ]
         },
         {
             "id": "5",
-            "product": "",
-            "imgUrl": "",
+            "product": "mySkin FAIN",
+            "imgUrl": "/images/productImages/fain.png",
             "descriptions": [
                 {
-                    "icon": "",
-                    "description": ""
+                    "id": "51",
+                    "icon": "/images/productImages/fain-icon-1.png",
+                    "description": "mySkin F.A.I.N考虑到造型稳定性将外观设计成圆形，是在满足产业通商资源部Good Design(GD)的评选条件，同时获得了CES 2023创新奖的解决方案。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "id": "52",
+                    "icon": "/images/productImages/fain-icon-2.png",
+                    "description": "大胆摆脱大型诊断仪的规格，尺寸仅有手掌般大小。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "id": "53",
+                    "icon": "/images/productImages/fain-icon-3.png",
+                    "description": "在保持与专业诊断仪相媲美的分析准确度的同时，与其他市场产品相比，价格经济实惠。"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "product": "DermoChoice",
+            "imgUrl": "/images/productImages/dermoChoice.png",
+            "descriptions": [
+                {
+                    "id": "61",
+                    "icon": "/images/productImages/dermoChoice-icon-1.png",
+                    "description": "这是一款可同通过拍摄脸部确认皮肤状态的综合皮肤诊断系统，可通过网站进行拍摄及诊断。"
+                },
+                {
+                    "id": "62",
+                    "icon": "/images/productImages/dermoChoice-icon-2.png",
+                    "description": "可根据客户要求支持程序的定制，通过插件方式可在现有网站整合系统，以弹出画面表现出来。"
+                },
+                {
+                    "id": "63",
+                    "icon": "/images/productImages/dermoChoice-icon-3.png",
+                    "description": "基于分析结果推荐适合的产品，通过链接直接连接到产品购买处。"
                 }
             ]
         }

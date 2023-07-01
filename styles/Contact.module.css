@@ -1,0 +1,25 @@
+.contact {
+    background-image: url('/images/pic2.webp');
+    background-position: right center !important;
+    justify-content: flex-start !important;
+}
+
+.contact div {
+    padding: 1rem !important;
+}
+
+.head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.code {
+    background-image: url('/images/2dcode.png');
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-self: flex-end;
+}

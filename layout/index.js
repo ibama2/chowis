@@ -1,17 +1,48 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import styles from '../styles/Layout.module.css';
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
+  const router = useRouter();
+  const goHome = () => router.push('/');
+
+  const path = (id) => {
+    switch(id) {
+      case '7':
+        return '/contact';
+      case '8':
+        return '/policy';
+      default:
+        return `/products/${id}`
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Chowis</title>
+        <title>昭盈偲</title>
         <link rel="icon" href="/images/headIcon.png" />
       </Head>
 
       <main>
         <div className={styles.logo}>
-          <img src="/images/chowislogo.webp" fetchpriority="high" />
+          <img onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
+          <div>
+            {[
+              { id: '1', name: 'DermoPrime' },
+              { id: '2', name: 'DermoSmart' },
+              { id: '3', name: 'DermoPico' },
+              { id: '4', name: 'mySkin·Hair KIOSK' },
+              { id: '5', name: 'mySkin FAIN' },
+              { id: '6', name: 'DermoChoice' },
+              { id: '7', name: '联系我们' },
+              { id: '8', name: '隐私协议' },
+
+            ].map(product => (
+              <Link href={path(product.id)}>{product.name}</Link>
+            ))}
+          </div>
         </div>
 
         {children}

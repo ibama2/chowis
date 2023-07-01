@@ -1,0 +1,9 @@
+.policy {
+    height: 100vh;
+    padding: 4rem 8rem;
+    text-align: left;
+}
+
+.hint {
+    font-weight: bold;
+}
