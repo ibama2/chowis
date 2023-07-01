@@ -9,6 +9,8 @@ export default function Layout({ children }) {
 
   const path = (id) => {
     switch(id) {
+      case '0':
+        return '/';
       case '7':
         return '/contact';
       case '8':
@@ -30,6 +32,7 @@ export default function Layout({ children }) {
           <img onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
           <div>
             {[
+              { id: '0', name: '首页' },
               { id: '1', name: 'DermoPrime' },
               { id: '2', name: 'DermoSmart' },
               { id: '3', name: 'DermoPico' },
