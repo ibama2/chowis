@@ -24,39 +24,39 @@
         },
         {
             "id": "2",
-            "product": "p2",
-            "imgUrl": "",
+            "product": "DermoSmart",
+            "imgUrl": "/images/productImages/dermoSmart.png",
             "descriptions": [
                 {
-                    "icon": "",
-                    "description": ""
+                    "icon": "/images/productImages/dermoPrime-icon-1.png",
+                    "description": "DermoSmart将支架和手持设备融为一体简洁大方，设计成小尺寸便于保管和移动。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "icon": "/images/productImages/dermoPrime-icon-2.png",
+                    "description": "同时拥有与大型专业诊断仪相媲美的分析准确度，和相对较低的价格提高了经济效率。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "icon": "/images/productImages/dermoPrime-icon-3.png",
+                    "description": "具有高便携性和高准确度的分析，不仅在专卖店，在快闪店等也可以不受限制地使用。"
                 }
             ]
         },
         {
             "id": "3",
-            "product": "",
-            "imgUrl": "",
+            "product": "DermoPico",
+            "imgUrl": "/images/productImages/dermoPico.png",
             "descriptions": [
                 {
-                    "icon": "",
-                    "description": ""
+                    "icon": "/images/productImages/dermoPico-icon-1.png",
+                    "description": "轻便、纤薄的外形提高了便携性，以简单的可拆卸形式适配各种移动设备的使用。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "icon": "/images/productImages/dermoPico-icon-2.png",
+                    "description": "在保持专业分析能力的同时，在功能、空间、价格等各方面都拥有卓越的效率性。"
                 },
                 {
-                    "icon": "",
-                    "description": ""
+                    "icon": "/images/productImages/dermoPico-icon-3.png",
+                    "description": "通过蓝牙(BLE)与安卓及IOS等多种移动设备的操作系统轻松兼容。"
                 }
             ]
         },
