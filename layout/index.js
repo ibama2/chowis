@@ -43,7 +43,7 @@ export default function Layout({ children }) {
               { id: '8', name: '隐私协议' },
 
             ].map(product => (
-              <Link href={path(product.id)}>{product.name}</Link>
+              <Link key={product.id} href={path(product.id)}>{product.name}</Link>
             ))}
           </div>
         </div>
