@@ -1,134 +1,50 @@
-.grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
+.contact {
+    background-image: url('/images/pic2.webp');
+    background-position: right center !important;
+    justify-content: flex-start !important;
+    color: #333;
 }
 
-.grid .row {
-  display: flex;
-  margin: 2rem;
-  max-width: 100%;
-  width: 100%;
-  height: 500px;
-  
-  /* Make image center */
-  background-position: right center;
- 
-  /* Make image fixed */
-  background-attachment: scroll;
-
-  /* Not repeat images */
-  background-repeat: no-repeat;
-
-  /* Set background size auto */
-  background-size: contain;
+.contact div {
+    padding: 1rem !important;
 }
 
-.description {
-  max-width: 100%;
-  width: 400px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 4rem;
-  line-height: 1.5rem;
-  color: #333;
+.head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.code {
+    background-image: url('/images/2dcode.png');
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-self: flex-end;
 }
 
 .isMobile {
-  display: none;
+    display: none;
 }
-
-.notMobile {
-  display: flex;
-}
-
-.areas {
-  font-size: 0.5rem;
-  justify-content: space-around;
-  padding: 0.5rem !important;
-}
-
-.areas .head {
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-top: 0.5rem; 
-}
-
-.areas .head:first-child {
-  margin-top: 0;
-}
-
-.hint {
-  font-size: 0.5rem;
-  align-self: flex-end;
-  justify-content: flex-end;
-}
-
-.pic1 {
-  background-image: url('/images/pic1.png');
-}
-
-.pic2 {
-  background-image: url('/images/pic2.webp');
-  background-position: left center !important;
-  justify-content: flex-end;
-}
-
-.pic3 {
-  background-image: url('/images/pic3.png');
-  background-position: center center !important;
-  height: 600px !important;
-  margin: 0 !important;
-}
-
-.pic4 {
-  background-image: url('/images/pic4.png');
-  justify-content: space-between;
-}
-
 
 @media (max-width: 768px) {
-  .grid {
-    width: 100%;
-  }
+    .contact {
+        background-position: center center !important;
+    }
 
-  .grid .row {
-      height: 260px;
-      justify-content: center;
-      margin: 0.8rem;
-  }
+    .isMobile {
+        display: flex;
+        width: 100%;
+        align-items: left;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        background-color: transparent;
+    }
 
-  .description {
-    padding: 1rem;
-  }
+    .head {
+        font-size: 1.1rem;
+    }
 
-  .isMobile {
-      display: flex;
-      width: 100%;
-      align-items: center;
-  }
-
-  .notMobile {
-      display: none;
-  }
-
-  .pic1, .pic2, .pic4 {
-    background-position: center center !important;
-  }
-
-  .pic3 {
-    height: 260px !important;
-  }
-
-  .head + div {
-    width: 100%;
-    text-align: left;
-    border-bottom: 2px dotted gainsboro;
-  }
-  
 }
