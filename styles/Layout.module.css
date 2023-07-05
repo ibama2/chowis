@@ -1,50 +1,7 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.logo {
-  width: 90%;
-  position: relative;
-  margin: 40px 0px 36px calc((100% - 980px) * 0);
-  left: 63px;
-  justify-self: start;
-  align-self: start;
-  height: 31px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo img {
-  width: 127px;
-  height: 100%;
-}
-
-.logo img:hover {
-  cursor: pointer;
-}
-
-.logo div {
-  flex: 1;
-  text-align: right;
-  justify-self: flex-end;
-}
-
-.logo div a {
-  padding: 0.5rem;
-}
-
-.logo div a:hover {
-  background-color: rgba(240, 248, 255, 0.497);
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
