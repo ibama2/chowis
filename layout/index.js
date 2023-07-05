@@ -179,10 +179,6 @@ export default function Layout({ children }) {
             transform: translateX(5%);
           }
 
-          .dropdown li:hover {
-            background-color: #4c9e9e;
-          }
-
         }
 
         main {
