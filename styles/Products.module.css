@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
+    padding: 0.8rem;
 }
 
 .grid .row {
