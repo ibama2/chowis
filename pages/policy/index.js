@@ -5,7 +5,7 @@ export default function Contact() {
 
     return (
         <Layout>
-            <div className={styles.policy}>
+            <div className={styles.policy}> 
                 <p>我们尊重并保护您的隐私。因此，我们制定了一项隐私政策，涵盖了我们如何收集、使用、披露、转移和存储您的信息。请花点时间熟悉我们的隐私惯例，以明确我们如何处理您的个人信息、我们收集和不收集的内容以及原因。</p>
 
                 <p className={styles.hint}>1. 个人信息的收集和使用目的</p>
