@@ -3,14 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .grid .row {
     display: flex;
     margin: 1rem;
-    max-width: 100%;
-    width: 1000px;
+    width: 100%;
     height: 500px;
     justify-content: flex-end;
     align-items: center;
@@ -28,9 +28,17 @@
     background-size: contain;
 }
 
+.isMobile {
+    display: none;
+}
+
+.notMobile {
+    display: flex;
+}
+
 .description {
-    max-width: 100%;
-    width: 400px;
+    max-width: 400px;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -50,4 +58,27 @@
     width: 30px;
     height: 30px;
     margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .grid .row {
+        height: 260px;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .isMobile {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .notMobile {
+        display: none;
+    }
+
+    .description>div{
+        padding: 0.5rem;
+    }
 }
