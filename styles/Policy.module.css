@@ -6,4 +6,11 @@
 
 .hint {
     font-weight: bold;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .policy {
+        padding: 1rem;
+    }
 }
