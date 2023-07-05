@@ -1,7 +1,8 @@
 .policy {
-    height: 100vh;
-    padding: 4rem 8rem;
+    height: 80vh;
+    padding: 2rem 4rem;
     text-align: left;
+    overflow-y:scroll;
 }
 
 .hint {
