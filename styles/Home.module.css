@@ -83,7 +83,7 @@
   background-image: url('/images/pic3.png');
   background-position: center center !important;
   height: 600px !important;
-  margin: 0 !important;
+  margin: 2rem 0 4rem 0 !important;
 }
 
 .pic4 {
@@ -123,6 +123,7 @@
 
   .pic3 {
     height: 260px !important;
+    margin: 0 !important;
   }
 
   .head + div {
