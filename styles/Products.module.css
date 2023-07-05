@@ -28,14 +28,6 @@
     background-size: contain;
 }
 
-.isMobile {
-    display: none;
-}
-
-.notMobile {
-    display: flex;
-}
-
 .description {
     max-width: 400px;
     width: 50%;
@@ -45,6 +37,15 @@
     justify-content: center;
     align-items: flex-start;
     background-color: rgba(240, 248, 255, 0.497);
+}
+
+
+.isMobile {
+    display: none;
+}
+
+.notMobile {
+    display: flex;
 }
 
 .description>div {
