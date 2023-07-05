@@ -22,18 +22,24 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Product({ productData }) {
-    // 用返回的数据渲染水果页面
     return (
         <Layout>
             <div className={styles.grid}>
                 <div className={styles.row} style={{ backgroundImage: `url(${productData.imgUrl})` }}>
-                    <div className={styles.description}>
+                    <div className={styles.description + ' ' + styles.notMobile}>
                         {productData?.descriptions.map(des => (
                             <div key={des.id}>
                                 <img src={des.icon} alt={des.description} /><div>{des.description}</div>
                             </div>
                         ))}
                     </div>
+                </div>
+                <div className={styles.description + ' ' + styles.isMobile}>
+                    {productData?.descriptions.map(des => (
+                        <div key={des.id}>
+                            <img src={des.icon} alt={des.description} /><div>{des.description}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </Layout>
