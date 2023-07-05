@@ -2,6 +2,7 @@
     background-image: url('/images/pic2.webp');
     background-position: right center !important;
     justify-content: flex-start !important;
+    color: #333;
 }
 
 .contact div {
@@ -22,4 +23,28 @@
     background-repeat: no-repeat;
     background-position: center center;
     align-self: flex-end;
+}
+
+.isMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        background-position: center center !important;
+    }
+
+    .isMobile {
+        display: flex;
+        width: 100%;
+        align-items: left;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        background-color: transparent;
+    }
+
+    .head {
+        font-size: 1.1rem;
+    }
+
 }
