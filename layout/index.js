@@ -6,6 +6,7 @@ import styles from '../styles/Layout.module.css';
 export default function Layout({ children }) {
   const router = useRouter();
   const goHome = () => router.push('/');
+  const goPolicy = () => router.push('/policy');
 
   return (
     <div className={styles.container}>
@@ -49,8 +50,8 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <footer>
-        <div>Copyright © 2022 Chowis Co., Ltd. All rights reserved. <span>PRIVACY POLICY</span></div>
+      <footer onClick={goPolicy}>
+        Copyright © 2022 Chowis Co., Ltd. All rights reserved.
       </footer>
 
       <style jsx>{`
@@ -66,8 +67,8 @@ export default function Layout({ children }) {
           padding: 0.8rem;
         }
 
-        footer span {
-          margin-left: 2rem;
+        footer:hover {
+          cursor: pointer;
         }
 
         .navbar {
@@ -137,6 +138,11 @@ export default function Layout({ children }) {
 
         /* APPLYING MEDIA QUERIES */
         @media (max-width: 768px) {
+
+        footer {
+          height: 48px;
+          font-size: 0.8rem;
+        }
         .navbar {
           padding: 10px;
         }

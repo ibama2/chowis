@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 80%;
 }
 
 .grid .row {
@@ -51,6 +51,8 @@
   font-size: 0.5rem;
   justify-content: space-around;
   padding: 0.5rem !important;
+  background-color: rgba(240, 248, 255, 0.497);
+  border-radius: 4px;
 }
 
 .areas .head {
@@ -71,24 +73,27 @@
 
 .pic1 {
   background-image: url('/images/pic1.png');
+  padding-left: 4rem;
 }
 
 .pic2 {
   background-image: url('/images/pic2.webp');
   background-position: left center !important;
   justify-content: flex-end;
+  padding-right: 4rem;
 }
 
 .pic3 {
   background-image: url('/images/pic3.png');
   background-position: center center !important;
-  height: 600px !important;
-  margin: 2rem 0 4rem 0 !important;
+  height: 800px !important;
+  margin: 2rem 0 !important;
 }
 
 .pic4 {
   background-image: url('/images/pic4.png');
   justify-content: space-between;
+  height: 600px !important;
 }
 
 
@@ -121,9 +126,13 @@
     background-position: center center !important;
   }
 
-  .pic3 {
+  .pic3, .pic4 {
     height: 260px !important;
     margin: 0 !important;
+  }
+
+  .areas {
+    background-color: transparent;
   }
 
   .head + div {
