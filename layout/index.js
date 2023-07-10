@@ -5,6 +5,8 @@ import styles from '../styles/Layout.module.css';
 
 export default function Layout({ children }) {
   const router = useRouter();
+  const {asPath, query} = router;
+  const {id} = query;
   const goHome = () => router.push('/');
   const goPolicy = () => router.push('/policy');
 
@@ -23,9 +25,9 @@ export default function Layout({ children }) {
           <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
 
           <div className="menu">
-            <li><Link href='/'>首页</Link></li>
+            <li><Link className={asPath=='/' ? styles.active : ''} href='/'>首页</Link></li>
             <li className="products">
-              <a style={{cursor: 'pointer'}}>产品</a>
+              <a  className={asPath.includes('/products') ? styles.active : ''} style={{cursor: 'pointer'}}>产品</a>
               
               <ul className="dropdown">
                 {[
@@ -36,12 +38,12 @@ export default function Layout({ children }) {
                   { id: '5', name: 'mySkin FAIN' },
                   { id: '6', name: 'DermoChoice' }
                 ].map(product => (
-                  <li key={product.id}><Link href={`/products/${product.id}`}>{product.name}</Link></li>
+                  <li key={product.id}><Link className={id==product.id ? styles.active : ''} href={`/products/${product.id}`}>{product.name}</Link></li>
                 ))}
               </ul>
             </li>
-            <li><Link href="/contact">联系我们</Link></li>
-            <li><Link href="/policy">隐私协议</Link></li>
+            <li><Link className={asPath=='/contact' ? styles.active : ''} href="/contact">联系我们</Link></li>
+            <li><Link className={asPath=='/policy' ? styles.active : ''} href="/policy">隐私协议</Link></li>
           </div>
         </ul>
       </nav>
@@ -155,7 +157,7 @@ export default function Layout({ children }) {
         .menu {
             display:none;
             position: absolute;
-            background-color:#e2e2e2de;
+            background-color:#e2e2e2f5;
             right: 0;
             left: 0;
             text-align: center;
