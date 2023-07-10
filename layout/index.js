@@ -25,7 +25,7 @@ export default function Layout({ children }) {
           <div className="menu">
             <li><Link href='/'>首页</Link></li>
             <li className="products">
-              <Link href='#'>产品</Link>
+              <a style={{cursor: 'pointer'}}>产品</a>
               
               <ul className="dropdown">
                 {[
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
                   { id: '5', name: 'mySkin FAIN' },
                   { id: '6', name: 'DermoChoice' }
                 ].map(product => (
-                  <li key={product.id}><Link href={`/products/${product.id}`}>{product.name}</Link></li>
+                  <li key={product.id}><a href={`/products/${product.id}`}>{product.name}</a></li>
                 ))}
               </ul>
             </li>
@@ -155,7 +155,7 @@ export default function Layout({ children }) {
         .menu {
             display:none;
             position: absolute;
-            background-color:#e2e2e2;
+            background-color:#e2e2e2f5;
             right: 0;
             left: 0;
             text-align: center;
