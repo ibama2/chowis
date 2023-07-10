@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import styles from '../styles/Layout.module.css';
 
 export default function Layout({ children }) {
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
       <nav className="navbar">
         <img className={styles.logo} onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
 
-        <ul className="nav-links">
+        <ul className="nav-links" key={router.asPath}>
 
           <input type="checkbox" id="checkbox_toggle" />
           <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
                   { id: '5', name: 'mySkin FAIN' },
                   { id: '6', name: 'DermoChoice' }
                 ].map(product => (
-                  <li key={product.id}><a href={`/products/${product.id}`}>{product.name}</a></li>
+                  <li key={product.id}><Link href={`/products/${product.id}`}>{product.name}</Link></li>
                 ))}
               </ul>
             </li>
@@ -155,7 +155,7 @@ export default function Layout({ children }) {
         .menu {
             display:none;
             position: absolute;
-            background-color:#e2e2e2f5;
+            background-color:#e2e2e2de;
             right: 0;
             left: 0;
             text-align: center;
