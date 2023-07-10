@@ -11,6 +11,9 @@ mail: 将域名解析为 mail.@，通常用于邮件服务
 # 查看dns解析
 dig -t a chowis.cn
 
+# 加key让折叠菜单自动隐藏，其实是告诉react这个折叠菜单需要重新渲染
+<ul className="nav-links" key={router.asPath}>
+折叠菜单的这个key特别重要！！否则点击折叠菜单里的子菜单后，折叠菜单不会隐藏！
 
 
 nginx 配置
