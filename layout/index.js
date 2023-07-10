@@ -78,6 +78,10 @@ export default function Layout({ children }) {
           padding: 20px;
           width: 100%;
         }
+
+        .navbar img {
+          cursor: pointer;
+        }
       
         /* NAVBAR MENU */
         .menu {
