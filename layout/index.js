@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/images/headIcon.png" />
       </Head>
       <nav className="navbar">
-        <img onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
+        <img className="logo" onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
 
         <ul className="nav-links">
 
@@ -79,7 +79,7 @@ export default function Layout({ children }) {
           width: 100%;
         }
 
-        .navbar img {
+        .logo {
           cursor: pointer;
         }
       
