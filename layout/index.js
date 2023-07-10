@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/images/headIcon.png" />
       </Head>
       <nav className="navbar">
-        <img className="logo" onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
+        <img className={styles.logo} onClick={goHome} src="/images/chowislogo.webp" fetchpriority="high" />
 
         <ul className="nav-links">
 
@@ -77,10 +77,6 @@ export default function Layout({ children }) {
           justify-content: space-between;
           padding: 20px;
           width: 100%;
-        }
-
-        .logo {
-          cursor: pointer;
         }
       
         /* NAVBAR MENU */
