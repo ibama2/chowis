@@ -96,6 +96,7 @@
   background-image: url('/images/pic4.png');
   justify-content: space-between;
   height: 600px !important;
+  background-size: 60% !important;
 }
 
 
@@ -131,6 +132,7 @@
   .pic3, .pic4 {
     height: 260px !important;
     margin: 0 !important;
+    background-size: 100% !important;
   }
 
   .areas {
