@@ -9,6 +9,12 @@
 
 .logo {
   cursor: pointer;
+  height: 31px;
+}
+
+.active {
+  color: rgb(29, 103, 205);
+  transition: 0.3s ease;
 }
 
 .active {
