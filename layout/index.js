@@ -98,7 +98,7 @@ export default function Layout({ children }) {
         }
         
         .dropdown {
-          background-color: #e6e6e6;
+          background-color: rgb(246, 246, 246);
           padding: 1em 0;
           position: absolute; /*WITH RESPECT TO PARENT*/
           display: none;
@@ -112,11 +112,6 @@ export default function Layout({ children }) {
         .dropdown li {
           padding: 0.5em;
           width: 8em;
-        }
-
-        .dropdown li:hover {
-          background-color: #ffffff91;
-          transition: 0.3s ease;
         }
         
         .products:hover .dropdown {
@@ -190,6 +185,7 @@ export default function Layout({ children }) {
         }
 
         main {
+          background-color: #f6f6f6;
           width: 100%;
           padding: 0 0 1rem 0;
           flex: 1;
@@ -209,7 +205,7 @@ export default function Layout({ children }) {
         
         a {
           text-decoration: none;
-          color: black;
+          color: rgb(40, 26, 57);
           font-weight: 400;
         }
 
