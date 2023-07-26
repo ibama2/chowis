@@ -5,8 +5,8 @@ import styles from '../styles/Layout.module.css';
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const {asPath, query} = router;
-  const {id} = query;
+  const { asPath, query } = router;
+  const { id } = query;
   const goHome = () => router.push('/');
   const goPolicy = () => router.push('/policy');
 
@@ -25,10 +25,10 @@ export default function Layout({ children }) {
           <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
 
           <div className="menu">
-            <li><Link className={asPath=='/' ? styles.active : ''} href='/'>首页</Link></li>
+            <li><Link className={asPath == '/' ? styles.active : ''} href='/'>首页</Link></li>
             <li className="products">
-              <a  className={asPath.includes('/products') ? styles.active : ''} style={{cursor: 'pointer'}}>产品</a>
-              
+              <a className={asPath.includes('/products') ? styles.active : ''} style={{ cursor: 'pointer' }}>产品</a>
+
               <ul className="dropdown">
                 {[
                   { id: '1', name: 'DermoPrime' },
@@ -38,12 +38,20 @@ export default function Layout({ children }) {
                   { id: '5', name: 'mySkin FAIN' },
                   { id: '6', name: 'DermoChoice' }
                 ].map(product => (
-                  <li key={product.id}><Link className={id==product.id ? styles.active : ''} href={`/products/${product.id}`}>{product.name}</Link></li>
+                  <li key={product.id}><Link className={id == product.id ? styles.active : ''} href={`/products/${product.id}`}>{product.name}</Link></li>
                 ))}
               </ul>
             </li>
-            <li><Link className={asPath=='/contact' ? styles.active : ''} href="/contact">联系我们</Link></li>
-            <li><Link className={asPath=='/policy' ? styles.active : ''} href="/policy">隐私协议</Link></li>
+            <li><Link className={asPath == '/contact' ? styles.active : ''} href="/contact">联系我们</Link></li>
+            <li><Link className={asPath == '/policy' ? styles.active : ''} href="/policy">隐私协议</Link></li>
+            <li className="products">
+              <a style={{ cursor: 'pointer' }}>语言</a>
+
+              <ul className="dropdown offset">
+                <li key={'eng'}><a href="https://www.chowis.com">英文</a></li>
+                <li key={'chn'}><a href="https://www.chowis.com/zh">中文</a></li>
+              </ul>
+            </li>
           </div>
         </ul>
       </nav>
@@ -103,6 +111,11 @@ export default function Layout({ children }) {
           position: absolute; /*WITH RESPECT TO PARENT*/
           display: none;
           top: 35px;
+        }
+
+        .offset {
+          right: 0;
+          text-align: center;
         }
         
         .dropdown li + li {
