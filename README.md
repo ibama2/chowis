@@ -1,6 +1,9 @@
 # chowis
 chowis china homepage
 
+# Installation System Requirements:
+Node.js 16.8 or later.
+
 支持chowis.cn 和 www.chowis.cn的话需要增加 @ 解析记录 和 www 解析记录
 
 www: 常见主机记录，将域名解析为 www.@
