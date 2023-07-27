@@ -106,7 +106,7 @@ export default function Layout({ children }) {
         }
         
         .dropdown {
-          background-color: rgb(246, 246, 246);
+          background-color: rgb(240, 240, 240);
           padding: 1em 0;
           position: absolute; /*WITH RESPECT TO PARENT*/
           display: none;
@@ -125,6 +125,10 @@ export default function Layout({ children }) {
         .dropdown li {
           padding: 0.5em;
           width: 8em;
+        }
+
+        .offset li {
+          width: 4em;
         }
         
         .products:hover .dropdown {
@@ -193,6 +197,7 @@ export default function Layout({ children }) {
             left: 50%;
             top: 40px;
             transform: translateX(5%);
+            right: auto;
           }
 
         }
